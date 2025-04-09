@@ -20,7 +20,7 @@ def git_add_commit_push(message):
     run_command(f"git add .", cwd=REPO_DIR)
     run_command(f'git commit -m "{message}"', cwd=REPO_DIR)
     run_command(f"git push origin {BRANCH}", cwd=REPO_DIR)
-num = 2
+num = int(input("==> "))
 for i in range(num):
     print(f"--- Iteration {i+1} ---")
 
